@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import ProjectShowcase from './components/ProjectShowcase'
 import Services from './components/Services'
 import Team from './components/Team'
+import Testimonials from './components/Testimonials'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <ProjectShowcase/>
         <AdAgencyPackages/>
         <Team/>
+        <Testimonials/>
     </main>
   )
 }
