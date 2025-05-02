@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import ProjectShowcase from './components/ProjectShowcase'
 import Services from './components/Services'
+import Team from './components/Team'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Services/>
         <ProjectShowcase/>
         <AdAgencyPackages/>
+        <Team/>
     </main>
   )
 }
