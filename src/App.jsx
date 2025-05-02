@@ -1,5 +1,6 @@
 import About from './components/About'
 import AdAgencyPackages from './components/AdAgencyPackages'
+import Faq from './components/Faq'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import ProjectShowcase from './components/ProjectShowcase'
@@ -18,6 +19,7 @@ const App = () => {
         <AdAgencyPackages/>
         <Team/>
         <Testimonials/>
+        <Faq/>
     </main>
   )
 }
