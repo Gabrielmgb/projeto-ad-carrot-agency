@@ -10,13 +10,16 @@ const Testimonials = () => {
         {TESTIMONIALS.map((testimonial, index) => (
           <div
             key={index}
-            className={`rounded-3xl p-4 ${testimonial.bgColor} ${testimonial.textColor} flex min-w-[250px] flex-1 flex-col items-start`}>
+            className={`rounded-3xl p-4 ${testimonial.bgColor} ${testimonial.textColor} flex min-w-[250px] flex-1 flex-col items-start`}
+          >
             <img
               src={testimonial.image}
               alt={testimonial.author}
-              className="mb-4 rounded-3xl object-cover"/>
+              className="mb-4 rounded-3xl object-cover"
+            />
             <p className="mb-4 text-lg md:text-xl lg:text-2xl">
-              {testimonial.text}</p>
+              {testimonial.text}
+            </p>
             <div className="mt-6">
               <p className="font-bold">{testimonial.author}</p>
               <p className="text-sm">{testimonial.title}</p>
