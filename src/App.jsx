@@ -1,5 +1,6 @@
 import About from './components/About'
 import AdAgencyPackages from './components/AdAgencyPackages'
+import ContactForm from './components/ContactForm'
 import Faq from './components/Faq'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
@@ -20,6 +21,7 @@ const App = () => {
         <Team/>
         <Testimonials/>
         <Faq/>
+        <ContactForm/>
     </main>
   )
 }
