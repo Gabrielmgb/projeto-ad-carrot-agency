@@ -1,6 +1,12 @@
 import { ABOUT } from "../constants";
+import { motion } from "motion/react";
 
 const About = () => {
+  const imageVariants = {
+    hidden: { opacity: 0, y:50 },
+    visible: { opacity: 1, y: 0}
+  }
+
   return (
     <section
       className="flex min-h-screen flex-col items-center bg-emerald-50 px-6"
@@ -11,7 +17,11 @@ const About = () => {
       </h2>
       <div className="mb-10 flex items-center justify-center gap-4">
         {ABOUT.profileImages.map((image, index) => (
-          <img
+          <motion.img
+            variants= {imageVariants}
+            initial= "hidden"
+            whileInView="visible"
+
             key={index}
             src={image.src}
             alt={image.alt}

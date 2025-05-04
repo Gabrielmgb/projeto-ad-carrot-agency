@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { SERVICES } from "../constants";
+import { motion } from "motion/react";
 
 const Services = () => {
   const [activeTab, setActiveTab] = useState(SERVICES[0]);
@@ -28,8 +29,13 @@ const Services = () => {
             </button>
           ))}
         </div>
-        <div
-          key={activeTab}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 50 }}
+          transition={{ duration: 0.5 }}
+
+          key={activeTab.id}
           className="mt-8 flex flex-col items-center lg:flex-row"
         >
           <div className="p-4 lg:w-1/2">
@@ -45,7 +51,7 @@ const Services = () => {
               className="h-auto w-full rounded-lg"
             />
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
