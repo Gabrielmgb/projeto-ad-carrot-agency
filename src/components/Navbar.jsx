@@ -63,7 +63,7 @@ const linkVariants = {
                 type="button"
                 className="inline-flex items-center justify-center bg-emerald-950 p-2 text-orange-50"
               >
-                <FaBars className="h-6 w-6" />
+                <FaBars className="h-6 w-6 cursor-pointer" />
               </button>
             </div>
           </div>
@@ -83,9 +83,9 @@ const linkVariants = {
           <button
             onClick={() => setIsOpen(false)}
             type="button"
-            className="absolute right-4 top-4 rounded-full bg-emerald-900 p-2 text-orange-50 lg:right-20"
+            className="absolute right-4 top-4 rounded-full bg-emerald-900 hover:bg-emerald-800 p-2 text-orange-50 lg:right-20 cursor-pointer"
           >
-            <FaTimes className="h-8 w-8" />
+            <FaTimes className="h-6 w-6" />
           </button>
           {LINKS.map((link, index) => (
             <motion.a
