@@ -63,7 +63,7 @@ const linkVariants = {
                 type="button"
                 className="inline-flex items-center justify-center bg-emerald-950 p-2 text-orange-50"
               >
-                <FaBars className="h-6 w-6 cursor-pointer" />
+                <FaBars className="h-6 w-6 cursor-pointer hover:scale-110 duration-300 transition-transform" />
               </button>
             </div>
           </div>
