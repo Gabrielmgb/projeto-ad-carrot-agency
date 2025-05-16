@@ -54,7 +54,7 @@ const linkVariants = {
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center">
               <a href="/">
-                <img src={logo} alt="AdCarrot" width={120} height={20} />
+                <img src={logo} alt="AdCarrot" width={120} height={20} className="cursor-pointer" />
               </a>
             </div>
             <div>
