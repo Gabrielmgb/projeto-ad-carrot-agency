@@ -11,7 +11,7 @@ const Hero = () => {
       className="flex
      min-h-screen flex-wrap items-center bg-zinc-950 text-orange-50"
     >
-      <div className="w-full p-8 md:w-1/2">
+      <div className="w-full p-10 md:w-1/2">
         <div className="mb-4 flex space-x-2">
           <motion.img
             initial= {{ opacity: 0, scale: 0.8 }}
