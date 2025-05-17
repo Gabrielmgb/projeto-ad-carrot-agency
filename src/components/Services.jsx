@@ -21,7 +21,7 @@ const Services = () => {
               onClick={() => setActiveTab(tab)}
               className={`px-4 py-2 font-semibold tracking-tighter transition-colors lg:text-2xl cursor-pointer ${
                 activeTab.id === tab.id
-                  ? "border-b-2 border-orange-500 text-orange-500"
+                  ? "border-b-2 border-orange text-orange-500"
                   : "text-blackBrown"
               }`}
             >
