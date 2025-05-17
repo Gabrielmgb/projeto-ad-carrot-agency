@@ -20,7 +20,7 @@ const Hero = () => {
 
             src={profileImg1}
             alt="Team Member 1"
-            className="h-12 w-12 rounded-full border-2 border-orange-50"
+            className="h-12 w-12 rounded-full border-2 border-orange-100"
           />
           <motion.img
             initial= {{ opacity: 0, scale: 0.8 }}
@@ -29,7 +29,7 @@ const Hero = () => {
 
             src={profileImg2}
             alt="Team Member 2"
-            className="h-12 w-12 rounded-full border-2 border-orange-50"
+            className="h-12 w-12 rounded-full border-2 border-orange-100"
           />
           <motion.img
           initial= {{ opacity: 0, scale: 0.8 }}
@@ -38,7 +38,7 @@ const Hero = () => {
 
             src={profileImg3}
             alt="Team Member 3"
-            className="h-12 w-12 rounded-full border-2 border-orange-50"
+            className="h-12 w-12 rounded-full border-2 border-orange-100"
           />
         </div>
         <motion.h1

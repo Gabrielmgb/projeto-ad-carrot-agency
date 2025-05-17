@@ -7,7 +7,7 @@ const Services = () => {
   return (
     <section
       className="bg-stone-50
-     p-6 text-emerald-950"
+     p-6 text-blackBrown"
       id="services"
     >
       <div className="container mx-auto">
@@ -22,7 +22,7 @@ const Services = () => {
               className={`px-4 py-2 font-semibold tracking-tighter transition-colors lg:text-2xl cursor-pointer ${
                 activeTab.id === tab.id
                   ? "border-b-2 border-orange-500 text-orange-500"
-                  : "text-emerald-950"
+                  : "text-blackBrown"
               }`}
             >
               {tab.title}
@@ -40,7 +40,7 @@ const Services = () => {
         >
           <div className="p-4 lg:w-1/2">
             <h2 className="mb-4 text-3xl lg:text-4xl">{activeTab.content}</h2>
-            <p className="text-lg tracking-tighter text-emerald-950 lg:text-2xl">
+            <p className="text-lg tracking-tighter text-blackBrown lg:text-2xl">
               {activeTab.description}
             </p>
           </div>

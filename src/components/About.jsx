@@ -9,7 +9,7 @@ const About = () => {
 
   return (
     <section
-      className="flex min-h-screen flex-col items-center bg-emerald-50 px-6"
+      className="flex min-h-screen flex-col items-center bg-neutral-300 px-6"
       id="about"
     >
       <h2 className="my-8 text-center text-4xl font-semibold tracking-tighter">
