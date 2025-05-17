@@ -118,7 +118,7 @@ const ContactForm = () => {
         </div>
         <button
           type="submit"
-          className={`mb-8 w-full rounded border bg-emerald-950 px-4 py-2 text-sm font-semibold text-orange-50 hover:bg-emerald-900 ${
+          className={`mb-8 w-full rounded border bg-darkBrown px-4 py-2 text-sm font-semibold text-orange-50 hover:bg-orange duration-300 colors-transition ${
             isSending ? "cursor-not-allowed opacity-50" : ""
           }`}
           disabled={isSending}
