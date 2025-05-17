@@ -2,7 +2,7 @@ import { TESTIMONIALS } from "../constants";
 
 const Testimonials = () => {
   return (
-    <section className="bg-stone-50 px-8 py-20" id="reviews">
+    <section className="bg-stone-100 px-8 py-20" id="reviews">
       <h2 className="my-8 text-center text-4xl font-semibold tracking tracking-tighter">
         What Client say
       </h2>

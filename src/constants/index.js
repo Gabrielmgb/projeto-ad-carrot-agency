@@ -197,7 +197,7 @@ export const TESTIMONIALS = [
     text: "Working with adCarrot has transformed our marketing strategy. Their creative solutions and dedication are unmatched.",
     author: "Sarah Johnson",
     title: "CEO, BrightFuture",
-    bgColor: "bg-purple-100",
+    bgColor: "bg-red-100",
     textColor: "text-purple-800",
     image: testimonial1,
   },
