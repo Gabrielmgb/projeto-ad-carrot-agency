@@ -4,5 +4,12 @@
 
 :root {
     font-family: "Work Sans", sans-serif;
-    background: #012c23;
+    background: #2b1d17;
+}
+
+@theme{
+    --color-blackBrown: #2b1d17;
+    --color-darkBrown: #3e2723;
+    --color-lightBrown: #61564f;
+    --color-brown: #5d4037;
 }

@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section
       className="flex
-     min-h-screen flex-wrap items-center bg-zinc-950 text-orange-50"
+     min-h-screen flex-wrap items-center bg-blackBrown text-orange-50"
     >
       <div className="w-full p-10 md:w-1/2">
         <div className="mb-4 flex space-x-2">
@@ -55,7 +55,7 @@ const Hero = () => {
         animate= {{ opacity: 1, y: 0 }}
         transition= {{ duration: 1 }}
         
-        className="mt-8 flex items-center gap-2 rounded-full bg-emerald-900 px-4 py-3 hover:bg-emerald-800 cursor-pointer">
+        className="mt-8 flex items-center gap-2 rounded-full bg-brown px-4 py-3 hover:bg-lightBrown cursor-pointer">
           <span>know More</span>
           <IoArrowForward />
         </motion.button>
