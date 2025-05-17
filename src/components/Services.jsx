@@ -48,7 +48,7 @@ const Services = () => {
             <img
               src={activeTab.imgSrc}
               alt={activeTab.title}
-              className="h-auto w-full rounded-lg"
+              className="h-auto w-full rounded-lg shadow-lg shadow-black/50"
             />
           </div>
         </motion.div>

@@ -19,7 +19,7 @@ const ProjectShowcase = () => {
               <img
                 src={project.imageUrl}
                 alt={project.title}
-                className="w-full rounded-3xl"
+                className="w-full rounded-3xl shadow-2xl"
               />
             </div>
             <div className="w-full md:w-1/2">
