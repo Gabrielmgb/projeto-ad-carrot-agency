@@ -55,7 +55,7 @@ const Hero = () => {
         animate= {{ opacity: 1, y: 0 }}
         transition= {{ duration: 1 }}
         
-        className="mt-8 flex items-center gap-2 rounded-full bg-brown px-4 py-3 hover:bg-lightBrown cursor-pointer">
+        className="mt-8 flex items-center gap-2 rounded-full bg-brown px-4 py-3 hover:bg-lightBrown duration-200 cursor-pointer">
           <span>know More</span>
           <IoArrowForward />
         </motion.button>

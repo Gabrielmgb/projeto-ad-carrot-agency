@@ -49,7 +49,7 @@ const linkVariants = {
 
   return (
     <>
-      <nav className="fixed z-10 w-full border-b border-orange-50/10 bg-emerald-950">
+      <nav className="fixed z-10 w-full border-b border-orange-50/10 bg-darkBrown">
         <div className=" container mx-auto px-4">
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center">
@@ -61,7 +61,7 @@ const linkVariants = {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="inline-flex items-center justify-center bg-emerald-950 p-2 text-orange-50"
+                className="inline-flex items-center justify-center p-2 text-orange-100"
               >
                 <FaBars className="h-6 w-6 cursor-pointer" />
               </button>
@@ -79,13 +79,13 @@ const linkVariants = {
         exit={{ opacity: 0, y: "-100%" }}
         transition={{ duration: 0.5 }}
 
-        className="fixed inset-0 z-20 flex flex-col space-y-8 bg-emerald-950 px-20 pt-20 text-5xl font-bold uppercase text-emerald-100 lg:text-6xl">
+        className="fixed inset-0 z-20 flex flex-col space-y-8 bg-brown px-20 pt-20 text-5xl font-bold uppercase text-orange-100 lg:text-6xl">
           <button
             onClick={() => setIsOpen(false)}
             type="button"
-            className="absolute right-4 top-4 rounded-full bg-emerald-900 hover:bg-emerald-800 p-2 text-orange-50 lg:right-20 cursor-pointer"
+            className="absolute right-4 top-4 rounded-full bg-blackBrown hover:bg-lightBrown p-2 text-orange-50 lg:right-50 duration-200 cursor-pointer"
           >
-            <FaTimes className="h-6 w-6" />
+            <FaTimes className="h-6 w-6 text-orange-100" />
           </button>
           {LINKS.map((link, index) => (
             <motion.a
@@ -97,7 +97,7 @@ const linkVariants = {
               key={index}
               href={`#${link.id}`}
               onClick={() => handleLinkClick(e, link.id)}
-              className="transition-colors duration-500 hover:text-orange-500"
+              className="transition-colors duration-500 hover:text-orange"
             >
               {link.name}
             </motion.a>
