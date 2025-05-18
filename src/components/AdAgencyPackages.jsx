@@ -42,7 +42,7 @@ const AdAgencyPackages = () => {
                   ))}
                 </ul>
                 <div>
-                  <button className="flex items-center gap-2 rounded-full bg-lightBrown px-4 py-2 text-orange-50 hover:bg-orange duration-200 cursor-pointer">
+                  <button className="flex items-center gap-2 rounded-full bg-brown px-4 py-2 text-orange-50 hover:bg-orange duration-200 cursor-pointer">
                     <span>Get Started</span>
                     <IoArrowForward />
                   </button>
