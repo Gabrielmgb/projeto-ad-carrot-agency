@@ -11,7 +11,7 @@ const Hero = () => {
       className="flex
      min-h-screen flex-wrap items-center bg-blackBrown text-orange-50"
     >
-      <div className="w-full p-10 md:w-1/2">
+      <div className="w-full p-8 mt-[40px] md:mt-none md:w-1/2">
         <div className="mb-4 flex space-x-2">
           <motion.img
             initial= {{ opacity: 0, scale: 0.8 }}
@@ -20,7 +20,7 @@ const Hero = () => {
 
             src={profileImg1}
             alt="Team Member 1"
-            className="h-12 w-12 rounded-full border-2 border-orange-100"
+            className="h-12 w-12 rounded-full border-2 border-orange"
           />
           <motion.img
             initial= {{ opacity: 0, scale: 0.8 }}
@@ -29,7 +29,7 @@ const Hero = () => {
 
             src={profileImg2}
             alt="Team Member 2"
-            className="h-12 w-12 rounded-full border-2 border-orange-100"
+            className="h-12 w-12 rounded-full border-2 border-orange"
           />
           <motion.img
           initial= {{ opacity: 0, scale: 0.8 }}
@@ -38,7 +38,7 @@ const Hero = () => {
 
             src={profileImg3}
             alt="Team Member 3"
-            className="h-12 w-12 rounded-full border-2 border-orange-100"
+            className="h-12 w-12 rounded-full border-2 border-orange"
           />
         </div>
         <motion.h1
