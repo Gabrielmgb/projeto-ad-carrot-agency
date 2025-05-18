@@ -49,7 +49,7 @@ const linkVariants = {
 
   return (
     <>
-      <nav className="fixed z-10 w-full border-b border-orange-50/10 bg-darkBrown">
+      <nav className="fixed z-10 w-full border-b border-lightBrown/50 bg-darkBrown shadow-lg shadow-black/40">
         <div className=" container mx-auto px-4">
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center">
