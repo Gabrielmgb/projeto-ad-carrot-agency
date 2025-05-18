@@ -27,9 +27,9 @@ const Faq = () => {
                 <h3 className="text-2xl">{faq.question}</h3>
                 <div>
                   {activeIndex === index ? (
-                    <FaMinus className="text-xl" />
+                    <FaMinus className="text-xl hover:text-orange duration-200" />
                   ) : (
-                    <FaPlus className="text-xl" />
+                    <FaPlus className="text-xl hover:text-orange duration-200" />
                   )}
                 </div>
               </div>
