@@ -83,7 +83,7 @@ const linkVariants = {
           <button
             onClick={() => setIsOpen(false)}
             type="button"
-            className="absolute right-4 top-4 rounded-full bg-blackBrown hover:bg-lightBrown p-2 text-orange-50 lg:right-50 duration-200 cursor-pointer"
+            className="absolute right-4 top-4 rounded-full bg-blackBrown hover:bg-lightBrown p-2 text-orange-50 lg:right-45 duration-200 cursor-pointer"
           >
             <FaTimes className="h-6 w-6 text-orange-100" />
           </button>
