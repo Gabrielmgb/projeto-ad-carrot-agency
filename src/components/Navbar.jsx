@@ -97,7 +97,7 @@ const linkVariants = {
               key={index}
               href={`#${link.id}`}
               onClick={(e) => handleLinkClick(e, link.id)}
-              className="transition-colors duration-500 hover:text-orange"
+              className="transition-colors duration-400 hover:text-orange"
             >
               {link.name}
             </motion.a>
