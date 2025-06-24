@@ -120,7 +120,7 @@ export const PROJECTS = [
 export const PACKAGES = [
   {
     name: "Premium",
-    price: "$25K",
+    price: "$49.99",
     description:
       "This premium package offers comprehensive advertising solutions for large-scale campaigns.",
     services: [
@@ -133,7 +133,7 @@ export const PACKAGES = [
   },
   {
     name: "Standard",
-    price: "$15K",
+    price: "$19.99",
     description:
       "This package includes effective market research and strategic campaign development.",
     services: [
@@ -146,7 +146,7 @@ export const PACKAGES = [
   },
   {
     name: "Basic",
-    price: "$10K",
+    price: "$9.99",
     description:
       "This package offers essential advertising solutions for startups and small businesses.",
     services: [
