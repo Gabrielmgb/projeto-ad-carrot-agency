@@ -3,8 +3,8 @@ import { motion } from "motion/react";
 
 const About = () => {
   const imageVariants = {
-    hidden: { opacity: 0, y:50 },
-    visible: { opacity: 1, y: 0}
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 }
   }
 
   return (
@@ -18,8 +18,8 @@ const About = () => {
       <div className="mb-10 flex items-center justify-center gap-4">
         {ABOUT.profileImages.map((image, index) => (
           <motion.img
-            variants= {imageVariants}
-            initial= "hidden"
+            variants={imageVariants}
+            initial="hidden"
             whileInView="visible"
 
             key={index}
