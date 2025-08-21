@@ -13,17 +13,17 @@ import Testimonials from './components/Testimonials'
 const App = () => {
   return (
     <main className="overflow-y-hidden bg-orange-50 text-blackBrown antialiased">
-        <Navbar/>
-        <Hero/>
-        <About/>
-        <Services/>
-        <ProjectShowcase/>
-        <AdAgencyPackages/>
-        <Team/>
-        <Testimonials/>
-        <Faq/>
-        <ContactForm/>
-        <Footer/>
+      <Navbar />
+      <Hero />
+      <About />
+      <Services />
+      <ProjectShowcase />
+      <AdAgencyPackages />
+      <Team />
+      <Testimonials />
+      <Faq />
+      <ContactForm />
+      <Footer />
     </main>
   )
 }
