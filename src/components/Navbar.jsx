@@ -42,10 +42,10 @@ const Navbar = () => {
     });
   };
 
-const linkVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 }
-}
+  const linkVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 }
+  }
 
   return (
     <>
@@ -72,38 +72,38 @@ const linkVariants = {
 
       <AnimatePresence>
 
-      {isOpen && (
-        <motion.div 
-        initial={{ opacity: 0, y: "-100%"}}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: "-100%" }}
-        transition={{ duration: 0.5 }}
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: "-100%" }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: "-100%" }}
+            transition={{ duration: 0.5 }}
 
-        className="fixed inset-0 z-20 flex flex-col space-y-8 bg-brown px-20 pt-20 text-5xl font-bold uppercase text-orange-100 lg:text-6xl">
-          <button
-            onClick={() => setIsOpen(false)}
-            type="button"
-            className="absolute right-4 top-4 rounded-full bg-blackBrown hover:bg-lightBrown p-2 text-orange-50 lg:right-45 duration-200 cursor-pointer"
-          >
-            <FaTimes className="h-6 w-6 text-orange-100" />
-          </button>
-          {LINKS.map((link, index) => (
-            <motion.a
-            variants={linkVariants}
-            initial="hidden"
-            animate="visible"
-            transition={{ duration: 0.5, delay: index * 0.2 }}
-
-              key={index}
-              href={`#${link.id}`}
-              onClick={(e) => handleLinkClick(e, link.id)}
-              className="transition-colors duration-400 hover:text-orange"
+            className="fixed inset-0 z-20 flex flex-col space-y-8 bg-brown px-20 pt-20 text-5xl font-bold uppercase text-orange-100 lg:text-6xl">
+            <button
+              onClick={() => setIsOpen(false)}
+              type="button"
+              className="absolute right-4 top-4 rounded-full bg-blackBrown hover:bg-lightBrown p-2 text-orange-50 lg:right-45 duration-200 cursor-pointer"
             >
-              {link.name}
-            </motion.a>
-          ))}
-        </motion.div>
-      )}
+              <FaTimes className="h-6 w-6 text-orange-100" />
+            </button>
+            {LINKS.map((link, index) => (
+              <motion.a
+                variants={linkVariants}
+                initial="hidden"
+                animate="visible"
+                transition={{ duration: 0.5, delay: index * 0.2 }}
+
+                key={index}
+                href={`#${link.id}`}
+                onClick={(e) => handleLinkClick(e, link.id)}
+                className="transition-colors duration-400 hover:text-orange"
+              >
+                {link.name}
+              </motion.a>
+            ))}
+          </motion.div>
+        )}
       </AnimatePresence>
     </>
   );
