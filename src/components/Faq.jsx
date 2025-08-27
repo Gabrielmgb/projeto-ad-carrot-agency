@@ -34,9 +34,8 @@ const Faq = () => {
                 </div>
               </div>
               <div
-                className={`mt-4 overflow-hidden text-lg transition-all duration-500 ${
-                  activeIndex === index ? "max-h-screen" : "max-h-0"
-                }`}
+                className={`mt-4 overflow-hidden text-lg transition-all duration-500 ${activeIndex === index ? "max-h-screen" : "max-h-0"
+                  }`}
               >
                 <p className="p-8">{faq.answer}</p>
               </div>
