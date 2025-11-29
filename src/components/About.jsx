@@ -4,8 +4,8 @@ import { motion } from "motion/react";
 const About = () => {
   const imageVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0 }
-  }
+    visible: { opacity: 1, y: 0 },
+  };
 
   return (
     <section
@@ -21,7 +21,6 @@ const About = () => {
             variants={imageVariants}
             initial="hidden"
             whileInView="visible"
-
             key={index}
             src={image.src}
             alt={image.alt}
