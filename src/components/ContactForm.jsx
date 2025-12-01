@@ -118,8 +118,9 @@ const ContactForm = () => {
         </div>
         <button
           type="submit"
-          className={`mb-8 w-full rounded-lg border bg-darkBrown px-4 py-2 text-sm font-semibold text-orange-50 hover:bg-orange duration-300 colors-transition cursor-pointer ${isSending ? "cursor-not-allowed opacity-50" : ""
-            }`}
+          className={`mb-8 w-full rounded-lg border bg-darkBrown px-4 py-2 text-sm font-semibold text-orange-50 hover:bg-orange duration-300 colors-transition cursor-pointer ${
+            isSending ? "cursor-not-allowed opacity-50" : ""
+          }`}
           disabled={isSending}
         >
           <div className="flex items-center justify-center gap-2">
