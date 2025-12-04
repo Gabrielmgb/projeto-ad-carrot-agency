@@ -17,7 +17,6 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-
             src={profileImg1}
             alt="Team Member 1"
             className="h-12 w-12 rounded-full border-2 border-orange"
@@ -26,7 +25,6 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-
             src={profileImg2}
             alt="Team Member 2"
             className="h-12 w-12 rounded-full border-2 border-orange"
@@ -35,7 +33,6 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-
             src={profileImg3}
             alt="Team Member 3"
             className="h-12 w-12 rounded-full border-2 border-orange"
@@ -45,8 +42,8 @@ const Hero = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-
-          className="text-4xl tracking-tighter md:text-5xl lg:text-7xl">
+          className="text-4xl tracking-tighter md:text-5xl lg:text-7xl"
+        >
           We create impactful ads that
           <span className=" text-orange-500"> elevate</span> your brand.
         </motion.h1>
@@ -54,8 +51,8 @@ const Hero = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-
-          className="mt-8 flex items-center gap-2 rounded-full bg-brown px-4 py-3 hover:bg-lightBrown duration-200 cursor-pointer">
+          className="mt-8 flex items-center gap-2 rounded-full bg-brown px-4 py-3 hover:bg-lightBrown duration-200 cursor-pointer"
+        >
           <span>know More</span>
           <IoArrowForward />
         </motion.button>
@@ -65,8 +62,10 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
-
-          src={heroImg} alt="Ad Agency" className="h-auto w-full" />
+          src={heroImg}
+          alt="Ad Agency"
+          className="h-auto w-full"
+        />
       </div>
     </section>
   );
