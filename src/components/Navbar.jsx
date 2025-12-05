@@ -44,8 +44,8 @@ const Navbar = () => {
 
   const linkVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 }
-  }
+    visible: { opacity: 1, y: 0 },
+  };
 
   return (
     <>
@@ -54,7 +54,13 @@ const Navbar = () => {
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center">
               <a href="/">
-                <img src={logo} alt="AdCarrot" width={120} height={20} className="cursor-pointer" />
+                <img
+                  src={logo}
+                  alt="AdCarrot"
+                  width={120}
+                  height={20}
+                  className="cursor-pointer"
+                />
               </a>
             </div>
             <div>
@@ -71,15 +77,14 @@ const Navbar = () => {
       </nav>
 
       <AnimatePresence>
-
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, y: "-100%" }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "-100%" }}
             transition={{ duration: 0.5 }}
-
-            className="fixed inset-0 z-20 flex flex-col space-y-8 bg-brown px-20 pt-20 text-5xl font-bold uppercase text-orange-100 lg:text-6xl">
+            className="fixed inset-0 z-20 flex flex-col space-y-8 bg-brown px-20 pt-20 text-5xl font-bold uppercase text-orange-100 lg:text-6xl"
+          >
             <button
               onClick={() => setIsOpen(false)}
               type="button"
@@ -93,7 +98,6 @@ const Navbar = () => {
                 initial="hidden"
                 animate="visible"
                 transition={{ duration: 0.5, delay: index * 0.2 }}
-
                 key={index}
                 href={`#${link.id}`}
                 onClick={(e) => handleLinkClick(e, link.id)}
