@@ -34,7 +34,6 @@ const Services = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 50 }}
           transition={{ duration: 0.5 }}
-
           key={activeTab.id}
           className="mt-8 flex flex-col items-center lg:flex-row"
         >
